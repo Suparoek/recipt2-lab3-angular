@@ -24,7 +24,8 @@ export class ProductListComponent implements OnInit {
       });
    }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
+   selectedProduct(product:Product){
+     alert(`product ${product.name} price: ${product.price} selected`);
+   }
 }
